@@ -118,8 +118,43 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
-var name = "world";
-console.log("Hello ".concat(name));
+console.log('Hola from index');
+console.log('Hola from gail');
+var URL1 = 'https://gateway.marvel.com:443/v1/public/creators/519/comics?ts=1&apikey=7e9ea0fa0845e4b10a585fcfb8e26916&hash=1b2a3ef1a10f270c584ae16338b2987b';
+var gailComics = document.querySelector('#gail-comics');
+fetch(URL1).then(function (response) {
+  return response.json();
+}).then(function (json) {
+  json.data.results.map(function (c) {
+    var anchor = document.createElement('a');
+    anchor.href = "".concat(c.urls[0].url);
+    var img = document.createElement('img');
+    img.src = "".concat(c.thumbnail.path, ".").concat(c.thumbnail.extension);
+    gailComics.appendChild(anchor);
+    anchor.appendChild(img);
+    var title = document.createElement('h3');
+    title.textContent = "".concat(c.title);
+    gailComics.appendChild(title);
+  });
+});
+console.log('Hola from trina');
+var URL2 = 'https://gateway.marvel.com:443/v1/public/creators/5278/comics?ts=1&apikey=7e9ea0fa0845e4b10a585fcfb8e26916&hash=1b2a3ef1a10f270c584ae16338b2987b';
+var trinaComics = document.querySelector('#trina-comics');
+fetch(URL2).then(function (response) {
+  return response.json();
+}).then(function (json) {
+  json.data.results.map(function (c) {
+    var anchor = document.createElement('a');
+    anchor.href = "".concat(c.urls[0].url);
+    var img = document.createElement('img');
+    img.src = "".concat(c.thumbnail.path, ".").concat(c.thumbnail.extension);
+    trinaComics.appendChild(anchor);
+    anchor.appendChild(img);
+    var title = document.createElement('h3');
+    title.textContent = "".concat(c.title);
+    trinaComics.appendChild(title);
+  });
+});
 },{}],"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -148,7 +183,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54227" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56534" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
