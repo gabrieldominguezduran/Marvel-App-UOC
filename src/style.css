@@ -38,6 +38,7 @@ header {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: black;
 }
 
 a:focus:active {
@@ -51,6 +52,10 @@ nav a {
   border-radius: 2px;
   margin: 0 0.3rem;
   padding: 0 0.5rem;
+}
+
+p a:hover {
+  color: #ec1d24;
 }
 
 .logo {
@@ -67,33 +72,49 @@ nav a {
 }
 
 .index-content {
-  padding-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  row-gap: 1rem;
 }
 
-.title {
-  display: inline-flex;
-}
-
-h1 {
+.index-title {
   font-size: 3rem;
-  padding: 0 0.5rem;
-  margin: 1rem 0 -1rem;
-}
-h2 {
-  font-size: 2rem;
-  padding: 0.5rem;
   text-align: center;
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  border: 3rem solid #ec1d24;
+  margin: 0;
 }
 
-h3 {
-  font-size: 1rem;
-  padding: 0 1rem;
-  text-align: center;
+.trina {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
 }
 
-.bio {
-  color: #ec1d24;
-  margin-top: 2rem;
+.trina-photo {
+  grid-column: 3 / -1;
+  grid-row: 1 / 2;
+  width: 75%;
+  border-radius: 50%;
+  margin: 1rem;
+}
+.gail {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+
+.gail-photo {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  width: 75%;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+.names {
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .gallery-content {
@@ -105,13 +126,25 @@ h3 {
   margin: 0 1rem;
 }
 
+.gallery-name {
+  font-size: 2rem;
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  padding: 0 1rem;
+}
+
 .bio-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 80vw;
   padding-bottom: 2.5rem;
-  margin: 0 1rem;
+  margin: 0 auto;
 }
 
 .bio-content h1 {
@@ -127,7 +160,7 @@ img {
 figure {
   width: 80vw;
   height: auto;
-  margin: 1rem;
+  margin: 0 auto;
 }
 
 figcaption {
@@ -136,11 +169,10 @@ figcaption {
 
 footer {
   background-color: black;
-  bottom: 0;
   width: 100%;
-  height: 2.5rem;
+  height: 4rem;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 footer a {
@@ -148,4 +180,175 @@ footer a {
   cursor: pointer;
   list-style-type: none;
   color: #fefefe;
+}
+
+@media (min-width: 480px) {
+  nav a {
+    font-size: 1rem;
+    margin-left: 5rem;
+  }
+
+  .names {
+    font-size: 3.5rem;
+  }
+  iframe {
+    width: 100%;
+    height: 350px;
+  }
+  .photo-bio {
+    width: 40%;
+    margin: auto;
+  }
+}
+@media (min-width: 650px) {
+  nav a {
+    font-size: 1.5rem;
+    margin-left: 8rem;
+  }
+
+  .names {
+    font-size: 4.5rem;
+  }
+  .gallery-content {
+    display: flex;
+    margin: 0 8rem;
+  }
+  img {
+    width: 80%;
+  }
+  iframe {
+    width: 100%;
+    height: 350px;
+  }
+
+  .article {
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+  .photo-bio {
+    width: 40%;
+    margin: auto;
+  }
+}
+@media (min-width: 950px) {
+  nav a {
+    font-size: 2.5rem;
+    margin-left: 12rem;
+  }
+
+  .names {
+    font-size: 6rem;
+  }
+  .gallery-content {
+    width: 90vw;
+  }
+
+  .gallery-content p {
+    font-size: 2rem;
+  }
+  #gail-comics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: stretch;
+    align-items: center;
+    margin: 0 6rem;
+  }
+  #gail-comics img {
+    width: 80%;
+  }
+  #trina-comics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: stretch;
+    margin: 0 6rem;
+  }
+  #trina-comics img {
+    width: 80%;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+  figure {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+  }
+  .article {
+    font-size: 1.5rem;
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .photo-bio {
+    width: 40%;
+    margin: auto;
+  }
+}
+@media (min-width: 2000px) {
+  header {
+    height: 10rem;
+  }
+  nav a {
+    font-size: 4rem;
+    margin: 2rem 20rem;
+  }
+
+  .names {
+    font-size: 20rem;
+  }
+
+  .index-title {
+    font-size: 10rem;
+  }
+  .gallery-content p {
+    font-size: 3rem;
+  }
+  .gallery-content h1 {
+    font-size: 4rem;
+  }
+
+  #gail-comics {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: stretch;
+    align-items: center;
+    margin: 0 6rem;
+  }
+  #gail-comics img {
+    width: 80%;
+  }
+  #trina-comics {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    justify-items: stretch;
+    margin: 0 6rem;
+  }
+  #trina-comics img {
+    width: 80%;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+  figure {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+  }
+  .article {
+    font-size: 2rem;
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  footer {
+    height: 10rem;
+    font-size: 3rem;
+  }
 }
