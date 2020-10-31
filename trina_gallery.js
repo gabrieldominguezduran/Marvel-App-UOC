@@ -1,6 +1,7 @@
+require('dotenv').config();
 console.log('Hola from trina');
 
-const URL2 = `https://gateway.marvel.com:443/v1/public/creators/5278/comics?ts=1&apikey=${env.MARVEL_API_PUBLIC_KEY}&hash=${env.MD5_HASH}`;
+const URL2 = `https://gateway.marvel.com:443/v1/public/creators/5278/comics?ts=1&apikey=${process.env.MARVEL_API_PUBLIC_KEY}&hash=${process.env.MD5_HASH}`;
 const trinaComics = document.querySelector('#trina-comics');
 
 fetch(URL2)
