@@ -1,7 +1,7 @@
 {
   "name": "PEC1",
   "version": "1.0.0",
-  "description": "",
+  "description": "UOC PEC1",
   "main": "src/index.html",
   "scripts": {
     "dev": "npm-run-all clean parcel:dev",
