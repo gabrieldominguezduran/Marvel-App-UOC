@@ -1,6 +1,7 @@
 console.log('Hola from trina');
 
 const trinaComics = document.querySelector('#trina-comics');
+const URL2 = URL2;
 
 fetch(URL2)
   .then((response) => response.json())

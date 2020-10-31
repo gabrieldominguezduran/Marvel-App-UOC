@@ -2,6 +2,8 @@ console.log('Hola from gail');
 
 const gailComics = document.querySelector('#gail-comics');
 
+const URL1 = URL1;
+
 fetch(URL1)
   .then((response) => response.json())
   .then((json) => {
