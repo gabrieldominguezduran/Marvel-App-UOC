@@ -6,11 +6,11 @@
   "scripts": {
     "dev": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
-    "parcel:dev": "parcel src/index.html",
-    "parcel:build": "parcel build src/index.html",
+    "parcel:dev": "parcel index.html",
+    "parcel:build": "parcel build index.html",
     "clean": "rimraf dist .cache .cache-loader",
-    "format": "prettier --write \"src/**/*.js\"",
-    "lint": "eslint \"src/**/*.js\" --quiet",
+    "format": "prettier --write \"**/*.js\"",
+    "lint": "eslint \"**/*.js\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
