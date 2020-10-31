@@ -1,10 +1,10 @@
 console.log('Hola from gail');
 
+const URL1 =
+  'https://gateway.marvel.com:443/v1/public/creators/519/comics?ts=1&apikey=7e9ea0fa0845e4b10a585fcfb8e26916&hash=1b2a3ef1a10f270c584ae16338b2987b';
 const gailComics = document.querySelector('#gail-comics');
 
-const URL_VARIABLE = URL1;
-
-fetch(URL_VARIABLE)
+fetch(URL1)
   .then((response) => response.json())
   .then((json) => {
     json.data.results.map((c) => {
