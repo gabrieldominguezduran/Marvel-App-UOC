@@ -2,9 +2,9 @@ console.log('Hola from gail');
 
 const gailComics = document.querySelector('#gail-comics');
 
-const URL1 = URL1;
+const URL_VARIABLE = URL1;
 
-fetch(URL1)
+fetch(URL_VARIABLE)
   .then((response) => response.json())
   .then((json) => {
     json.data.results.map((c) => {

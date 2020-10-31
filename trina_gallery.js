@@ -1,9 +1,9 @@
 console.log('Hola from trina');
 
 const trinaComics = document.querySelector('#trina-comics');
-const URL2 = URL2;
+const URL_VARIABLE2 = URL2;
 
-fetch(URL2)
+fetch(URL_VARIABLE2)
   .then((response) => response.json())
   .then((json) => {
     json.data.results.map((c) => {
