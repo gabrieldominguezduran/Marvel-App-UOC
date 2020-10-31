@@ -1,6 +1,6 @@
 console.log('Hola from gail');
 
-const URL1 = `https://gateway.marvel.com:443/v1/public/creators/519/comics?ts=1&apikey=${MARVEL_API_PUBLIC_KEY}&hash=${MD5_HASH}`;
+const URL1 = `https://gateway.marvel.com:443/v1/public/creators/519/comics?ts=1&apikey=${env.MARVEL_API_PUBLIC_KEY}&hash=${env.MD5_HASH}`;
 const gailComics = document.querySelector('#gail-comics');
 
 fetch(URL1)
