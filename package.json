@@ -1,11 +1,11 @@
 {
-  "name": "PEC1",
+  "name": "herramientas_html_y_css_pec1",
   "version": "1.0.0",
   "description": "UOC PEC1",
   "main": "docs/index.html",
   "scripts": {
     "dev": "npm-run-all clean parcel:dev",
-    "build": "parcel build docs/index.html",
+    "build": "npm-run-all clean parcel:build",
     "parcel:dev": "parcel docs/index.html",
     "parcel:build": "parcel build docs/index.html",
     "clean": "rimraf dist .cache .cache-loader",
