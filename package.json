@@ -5,7 +5,7 @@
   "main": "docs/index.html",
   "scripts": {
     "dev": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean parcel:build",
+    "build": "parcel build docs/index.html",
     "parcel:dev": "parcel docs/index.html",
     "parcel:build": "parcel build docs/index.html",
     "clean": "rimraf dist .cache .cache-loader",
