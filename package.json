@@ -25,7 +25,5 @@
     "prettier": "^2.1.2",
     "rimraf": "^3.0.2"
   },
-  "dependencies": {
-    "dotenv": "^8.2.0"
-  }
+  "dependencies": {}
 }
