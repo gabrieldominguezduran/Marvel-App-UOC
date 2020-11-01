@@ -4,8 +4,8 @@
   "description": "UOC PEC1",
   "main": "docs/index.html",
   "scripts": {
-    "dev": "parcel docs/index.html",
-    "build": "parcel build docs/index.html",
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
     "parcel:dev": "parcel docs/index.html",
     "parcel:build": "parcel build docs/index.html",
     "clean": "rimraf dist .cache .cache-loader",
@@ -25,5 +25,7 @@
     "prettier": "^2.1.2",
     "rimraf": "^3.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
