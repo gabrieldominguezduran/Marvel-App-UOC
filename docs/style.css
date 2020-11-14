@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
   padding: 0;
   min-height: 100vh;
-  max-width: 2500px;
+  max-width: 2000px;
   background-color: #000;
   color: #fefefe;
 }
@@ -83,7 +83,7 @@ p a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  row-gap: 1rem;
+  grid-gap: 1rem;
 }
 
 .index-title {
@@ -146,8 +146,8 @@ p a:hover {
 }
 
 h3 {
-  margin: 0;
-  padding: 0 1rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.25rem;
 }
 
 h3:hover {
@@ -155,6 +155,7 @@ h3:hover {
 }
 
 .bio-content {
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,7 +181,12 @@ figure {
 }
 
 figcaption {
+  text-align: center;
   font-size: 0.7rem;
+}
+
+iframe {
+  width: 80vw;
 }
 
 footer {
@@ -207,9 +213,17 @@ footer a {
   .names {
     font-size: 3.5rem;
   }
+  figure {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   iframe {
-    width: 100%;
+    max-width: 500px;
+    width: 80vw;
     height: 350px;
+    margin: 0 auto;
   }
   .photo-bio {
     width: 40%;
@@ -218,7 +232,7 @@ footer a {
   #trina-comics {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 2rem;
     align-items: center;
     justify-items: stretch;
     margin: 0 auto;
@@ -226,7 +240,7 @@ footer a {
   #gail-comics {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 2rem;
     align-items: center;
     justify-items: stretch;
     margin: 0 auto;
@@ -254,14 +268,23 @@ footer a {
     width: 40%;
     margin: auto;
   }
+  figure {
+    width: 80vw;
+    height: 100%;
+    margin: 0 auto;
+  }
   .gallery-section {
     margin: 0 2rem;
+  }
+  .gallery-content {
+    max-width: 2500px;
+    margin: 0 auto;
   }
 
   #trina-comics {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 1rem;
     align-items: center;
     justify-items: stretch;
     margin: 0 auto;
@@ -269,7 +292,7 @@ footer a {
   #gail-comics {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 1rem;
     align-items: center;
     justify-items: stretch;
     margin: 0 auto;
@@ -339,11 +362,7 @@ footer a {
   h3 {
     font-size: 1rem;
   }
-  figure {
-    width: 70%;
-    height: 100%;
-    margin: auto;
-  }
+
   .article {
     font-size: 1.5rem;
     width: 80%;
@@ -358,7 +377,7 @@ footer a {
   #trina-comics {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-gap: 1rem;
     align-items: center;
     justify-items: stretch;
     margin: 0 auto;
@@ -366,19 +385,27 @@ footer a {
   #gail-comics {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-gap: 1rem;
     align-items: center;
     justify-items: stretch;
     margin: 0 auto;
   }
 }
-@media (min-width: 2000px) {
+@media (min-width: 1600px) {
+  body {
+    width: 100vw;
+  }
   header {
     height: 10rem;
   }
+  nav {
+    width: 100vw;
+  }
   nav a {
+    display: inline-flex;
+    justify-content: space-between;
     font-size: 4rem;
-    margin: 2rem 19rem;
+    margin: 1rem 15rem;
   }
 
   .names {
@@ -398,8 +425,9 @@ footer a {
   }
 
   figure {
-    width: 80%;
-    height: 100%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
     margin: auto;
   }
   .article {
