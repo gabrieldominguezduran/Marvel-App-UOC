@@ -10,6 +10,8 @@ fetch(URL1)
       let div = document.createElement('div');
       let img = document.createElement('img');
       img.src = `${c.thumbnail.path}.${c.thumbnail.extension}`;
+      img.alt = `Portada del comic ${c.title}`;
+      img.loading = `lazy`;
       gailComics.appendChild(div);
       div.appendChild(img);
 
