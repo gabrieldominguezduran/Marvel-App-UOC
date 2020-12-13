@@ -72,11 +72,11 @@ p a:hover {
   background-color: #ec1d24;
   color: #fefefe;
   border-radius: 2px;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .logo-link > img {
-  width: 42%;
+  width: 8rem;
   border-radius: 50%;
   padding: 0 2rem;
   animation: clip 3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
@@ -355,10 +355,6 @@ footer a {
     margin: 0 auto;
   }
 
-  .logo-link > img {
-    width: 30%;
-  }
-
   #trina-comics {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -405,13 +401,13 @@ footer a {
     justify-content: center;
     background-color: #ec1d24;
     color: #fefefe;
-    font-size: 8rem;
+    font-size: 7rem;
     margin: 0.5rem 3rem;
     padding: 0 2rem;
   }
 
   .logo-link > img {
-    width: 30%;
+    width: 11rem;
     border-radius: 50%;
     padding: 0 2rem;
     animation: clip 3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
@@ -496,7 +492,7 @@ footer a {
   }
 
   .logo-link > img {
-    width: 20%;
+    width: 12rem;
   }
 
   .index-content {
@@ -593,5 +589,11 @@ footer a {
     align-items: center;
     justify-items: stretch;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-link > img {
+    width: 12rem;
   }
 }
