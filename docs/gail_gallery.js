@@ -11,7 +11,6 @@ fetch(URL1)
       let img = document.createElement('img');
       img.src = `${c.thumbnail.path}.${c.thumbnail.extension}`;
       img.alt = `Portada del comic ${c.title}`;
-      img.longdesc = `${c.title}`;
       img.loading = `lazy`;
       gailComics.appendChild(div);
       div.appendChild(img);
