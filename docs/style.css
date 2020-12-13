@@ -295,12 +295,12 @@ h3:hover {
   justify-content: center;
 }
 
-div > img {
+.img-gallery {
   width: 100%;
   margin: 1rem auto;
   transition: all 0.2s ease-in-out;
 }
-div > img:hover {
+.img-gallery:hover {
   transform: scale(1.1);
   margin: 1rem auto;
 }
@@ -376,12 +376,12 @@ footer a {
     margin: 0 auto;
   }
 
-  div > img {
+  .img-gallery {
     width: 80%;
     margin: 1rem auto;
     transition: all 0.2s ease-in-out;
   }
-  div > img:hover {
+  .img-gallery:hover {
     transform: scale(1.4);
     margin: 1rem auto;
   }
