@@ -77,20 +77,19 @@ p a:hover {
 
 .logo-link > img {
   width: 40%;
-  height: 80%;
   border-radius: 50%;
   padding: 0 2rem;
-  animation: clip 1.2s ease-in-out infinite alternate;
+  animation: clip 3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
 @keyframes clip {
   0% {
-    clip-path: circle(10%);
-    clip-path: circle(10%);
+    clip-path: circle(5%);
+    clip-path: circle(5%);
   }
   100% {
-    clip-path: circle(35%);
-    clip-path: circle(35%);
+    clip-path: circle(30%);
+    clip-path: circle(30%);
   }
 }
 
@@ -107,15 +106,16 @@ p a:hover {
 .index-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 1rem;
+  margin: 1rem auto;
 }
 
 .index-title {
-  font-size: 1.5rem;
-  text-align: center;
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
   grid-row: 3 / 4;
+  font-size: 1.3rem;
+  text-align: center;
   overflow: hidden;
   white-space: nowrap;
   margin: 2rem auto 0;
@@ -144,10 +144,8 @@ p a:hover {
   clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
   margin: 1rem 1.5rem 0 0;
 }
-.trina-photo-bio {
-  grid-column: 3 / -1;
-  grid-row: 1 / 2;
-  width: 100%;
+.trina-photo-bio-top {
+  width: 10%;
   clip-path: polygon(
     50% 0%,
     61% 35%,
@@ -160,24 +158,10 @@ p a:hover {
     2% 35%,
     39% 35%
   );
-  margin: 1rem;
+  margin: 1rem auto;
 }
-.gail {
-  grid-column: 2 / 4;
-  grid-row: 2 / 3;
-}
-
-.gail-photo {
-  grid-column: 1 / 3;
-  grid-row: 2 / 3;
-  width: 80%;
-  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-  margin: 1rem 0 0 2rem;
-}
-.gail-photo-bio {
-  grid-column: 1 / 3;
-  grid-row: 2 / 3;
-  width: 100%;
+.trina-photo-bio {
+  width: 40%;
   clip-path: polygon(
     20% 0%,
     0% 20%,
@@ -192,7 +176,53 @@ p a:hover {
     80% 0%,
     50% 30%
   );
-  margin: 1rem;
+  margin: 0 auto;
+}
+.gail {
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+}
+
+.gail-photo {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  width: 80%;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  margin: 1rem 0 0 2rem;
+}
+.gail-photo-bio-top {
+  width: 10%;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  margin: 0 auto;
+}
+.gail-photo-bio {
+  width: 40%;
+  clip-path: polygon(
+    20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%
+  );
+  margin: 1rem auto;
 }
 
 .names {
@@ -257,12 +287,12 @@ h3:hover {
 }
 
 div > img {
-  width: 80%;
+  width: 100%;
   margin: 1rem auto;
+  transition: all 0.2s ease-in-out;
 }
 div > img:hover {
-  width: 100%;
-  transition: all 1s;
+  transform: scale(1.1);
   margin: 1rem auto;
 }
 
@@ -282,10 +312,12 @@ iframe {
 }
 
 footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: #ec1d24;
   width: 100%;
   height: 4rem;
-  text-align: center;
   padding: 1rem;
 }
 
@@ -317,10 +349,7 @@ footer a {
     height: 350px;
     margin: 0 auto;
   }
-  .photo-bio {
-    width: 40%;
-    margin: auto;
-  }
+
   #trina-comics {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -339,14 +368,13 @@ footer a {
   }
 
   div > img {
-    width: 60%;
+    width: 80%;
     margin: 1rem auto;
+    transition: all 0.2s ease-in-out;
   }
-
   div > img:hover {
-    width: 100%;
-    transition: all 1s;
-    margin: 1rem;
+    transform: scale(1.4);
+    margin: 1rem auto;
   }
 
   h3 {
@@ -374,17 +402,16 @@ footer a {
   }
 
   .logo-link > img {
-    width: 30%;
-    height: 20%;
+    width: 40%;
     border-radius: 50%;
-    padding: 0 1.2rem;
-    animation: clip 1.2s ease-in-out infinite alternate;
+    padding: 0 2rem;
+    animation: clip 3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
   }
 
   @keyframes clip {
     0% {
-      clip-path: circle(10%);
-      clip-path: circle(10%);
+      clip-path: circle(5%);
+      clip-path: circle(5%);
     }
     100% {
       clip-path: circle(30%);
@@ -418,10 +445,7 @@ footer a {
     padding: 1rem;
     margin: 1rem auto;
   }
-  .photo-bio {
-    width: 40%;
-    margin: auto;
-  }
+
   figure {
     width: 80vw;
     height: 100%;
@@ -469,7 +493,7 @@ footer a {
   .index-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: repeat(3, 1fr);
     row-gap: 1rem;
     padding: 0 1rem;
   }
@@ -477,8 +501,8 @@ footer a {
   .index-title {
     font-size: 3rem;
     text-align: center;
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
     overflow: hidden;
     white-space: nowrap;
     margin: 2rem auto;
@@ -509,12 +533,12 @@ footer a {
 
   .gail {
     grid-column: 2 / 4;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
   }
 
   .gail-photo {
     grid-column: 1 / 3;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
     width: 75%;
     margin: 1rem 7rem;
   }
@@ -538,10 +562,6 @@ footer a {
     margin: 1rem auto;
   }
 
-  .photo-bio {
-    width: 40%;
-    margin: auto;
-  }
   #trina-comics {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
