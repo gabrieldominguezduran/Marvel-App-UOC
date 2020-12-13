@@ -78,19 +78,8 @@ p a:hover {
 .logo-link > img {
   width: 20%;
   clip-path: circle(30% at 50% 50%);
-  animation: clip 3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
-@keyframes clip {
-  0% {
-    clip-path: circle(5%);
-    clip-path: circle(5%);
-  }
-  100% {
-    clip-path: circle(30%);
-    clip-path: circle(30%);
-  }
-}
 .nav {
   display: flex;
   justify-content: space-around;
@@ -415,8 +404,12 @@ footer a {
     }
   }
 
+  .logo-link {
+    font-size: 6rem;
+  }
+
   .logo-link > img {
-    width: 10%;
+    width: 15%;
   }
   .article {
     width: 80%;
@@ -465,7 +458,7 @@ footer a {
   }
 
   .logo-link > img {
-    width: 8%;
+    width: 12%;
   }
 
   .index-content {
@@ -567,6 +560,6 @@ footer a {
 
 @media (min-width: 1200px) {
   .logo-link > img {
-    width: 5%;
+    width: 10%;
   }
 }
