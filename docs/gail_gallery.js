@@ -12,6 +12,7 @@ fetch(URL1)
       img.src = `${c.thumbnail.path}.${c.thumbnail.extension}`;
       img.alt = `Portada del comic ${c.title}`;
       img.loading = `lazy`;
+      img.class = `img-gallery`;
       gailComics.appendChild(div);
       div.appendChild(img);
 

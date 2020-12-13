@@ -94,7 +94,7 @@ p a:hover {
     80% 0%,
     50% 30%
   );
-  margin: 1rem 0;
+  margin: 1rem 0 2rem;
 }
 
 .nav {
@@ -421,11 +421,11 @@ footer a {
     }
   }
 
-  .logo-link {
+  .logo-img {
     font-size: 6rem;
   }
 
-  .logo-link > img {
+  .logo-img {
     width: 15%;
   }
   .article {
@@ -474,7 +474,7 @@ footer a {
     font-size: 6rem;
   }
 
-  .logo-link > img {
+  .logo-img {
     width: 12%;
   }
 
@@ -576,7 +576,7 @@ footer a {
 }
 
 @media (min-width: 1200px) {
-  .logo-link > img {
+  .logo-img {
     width: 10%;
   }
 }
