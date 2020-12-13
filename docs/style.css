@@ -76,7 +76,7 @@ p a:hover {
 }
 
 .logo-link > img {
-  width: 40%;
+  width: 42%;
   border-radius: 50%;
   padding: 0 2rem;
   animation: clip 3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
@@ -106,12 +106,13 @@ p a:hover {
 .index-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 50px;
   grid-gap: 1rem;
   margin: 1rem auto;
 }
 
 .index-title {
+  height: 100px;
   grid-column: 1 / -1;
   grid-row: 3 / 4;
   font-size: 1.3rem;
@@ -223,6 +224,10 @@ p a:hover {
     50% 30%
   );
   margin: 1rem auto;
+}
+
+.video {
+  margin: 0 auto;
 }
 
 .names {
@@ -350,6 +355,10 @@ footer a {
     margin: 0 auto;
   }
 
+  .logo-link > img {
+    width: 30%;
+  }
+
   #trina-comics {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -402,7 +411,7 @@ footer a {
   }
 
   .logo-link > img {
-    width: 40%;
+    width: 30%;
     border-radius: 50%;
     padding: 0 2rem;
     animation: clip 3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
@@ -426,7 +435,7 @@ footer a {
     grid-row: 3 / 4;
     overflow: hidden;
     white-space: nowrap;
-    margin: 2rem auto 0;
+    margin: 0 auto;
     letter-spacing: 0.15em;
     animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
   }
@@ -493,7 +502,7 @@ footer a {
   .index-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 100px;
     row-gap: 1rem;
     padding: 0 1rem;
   }
@@ -505,7 +514,7 @@ footer a {
     grid-row: 3 / 4;
     overflow: hidden;
     white-space: nowrap;
-    margin: 2rem auto;
+    margin: 1rem auto;
     letter-spacing: 0.15em;
     animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
   }
@@ -517,6 +526,13 @@ footer a {
     to {
       width: 100%;
     }
+  }
+
+  .video {
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0 auto;
   }
 
   .trina {
@@ -544,7 +560,7 @@ footer a {
   }
 
   .gallery-content {
-    width: 90vw;
+    max-width: 1500px;
   }
 
   .gallery-content p {
