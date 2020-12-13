@@ -66,17 +66,20 @@ p a:hover {
   color: #ec1d24;
 }
 
-.logo-link {
+.logo {
   display: flex;
   justify-content: center;
+}
+
+.logo-link {
   background-color: #ec1d24;
   color: #fefefe;
   border-radius: 2px;
   font-size: 4rem;
 }
 
-.logo-link > img {
-  width: 20%;
+.logo-img {
+  width: 10%;
   clip-path: polygon(
     20% 0%,
     0% 20%,
@@ -91,6 +94,7 @@ p a:hover {
     80% 0%,
     50% 30%
   );
+  margin: 1rem 0;
 }
 
 .nav {
