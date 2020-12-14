@@ -72,16 +72,16 @@ p a:hover {
 }
 
 .img-div {
-  width: 100%;
+  display: inline-block;
+  width: 20%;
   margin: 1rem 0;
 }
 
 .logo-link {
+  text-align: center;
   background-color: #ec1d24;
   color: #fefefe;
-  border-radius: 2px;
-  font-size: 6rem;
-  margin: 0 auto;
+  font-size: 5rem;
 }
 
 .logo-img {
@@ -100,13 +100,13 @@ p a:hover {
     80% 0%,
     50% 30%
   );
-  margin: 1rem 0 2rem;
+
   transition: all 0.2s ease-in-out;
 }
 
 .logo-img:hover {
   transform: scale(1.3);
-  margin: 2rem;
+  clip-path: circle(40%);
 }
 
 .nav {
@@ -433,13 +433,16 @@ footer a {
     }
   }
 
-  .logo-img {
-    font-size: 6rem;
+  .img-div {
+    width: 15%;
+    margin: 1rem 0 0;
   }
 
-  .logo-img {
-    width: 15%;
+  .logo-link {
+    text-align: center;
+    font-size: 7rem;
   }
+
   .article {
     width: 80%;
     padding: 1rem;
@@ -486,8 +489,14 @@ footer a {
     font-size: 6rem;
   }
 
-  .logo-img {
-    width: 12%;
+  .img-div {
+    width: 10%;
+    margin: 1rem 0;
+  }
+
+  .logo-link {
+    text-align: center;
+    font-size: 8rem;
   }
 
   .index-content {
@@ -588,7 +597,13 @@ footer a {
 }
 
 @media (min-width: 1200px) {
-  .logo-img {
-    width: 10%;
+  .img-div {
+    width: 12%;
+    margin: 1rem 0;
+  }
+
+  .logo-link {
+    text-align: center;
+    font-size: 10rem;
   }
 }
