@@ -71,15 +71,21 @@ p a:hover {
   justify-content: center;
 }
 
+.img-div {
+  width: 100%;
+  margin: 1rem 0;
+}
+
 .logo-link {
   background-color: #ec1d24;
   color: #fefefe;
   border-radius: 2px;
   font-size: 6rem;
+  margin: 0 auto;
 }
 
 .logo-img {
-  width: 10%;
+  width: 100%;
   clip-path: polygon(
     20% 0%,
     0% 20%,
@@ -95,6 +101,12 @@ p a:hover {
     50% 30%
   );
   margin: 1rem 0 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.logo-img:hover {
+  transform: scale(1.3);
+  margin: 2rem;
 }
 
 .nav {
