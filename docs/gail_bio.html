@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="preload"
+      href="styles.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./styles.css" /></noscript>
+
     <link rel="icon" href="./favicon.ico" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+
     <title>Marvel APP</title>
   </head>
   <body>
@@ -34,14 +40,16 @@
       </nav>
     </header>
     <main class="bio-content">
-      <img
-        srcset="gail2.jpg 480w, gail.jpg 800w"
-        sizes="(min-width: 1980px) 150px, calc(7.59vw + 1px)"
-        src="./gail.jpg"
-        alt="Gail comic domino"
-        class="gail-photo-bio-top"
-      />
-      <h1>Gail Simone</h1>
+      <div class="bio-header">
+        <img
+          srcset="gail2.jpg 480w, gail.jpg 800w"
+          sizes="(min-width: 1980px) 150px, calc(7.59vw + 1px)"
+          src="./gail.jpg"
+          alt="Gail comic domino"
+          class="gail-photo-bio-top"
+        />
+        <h1>Gail Simone</h1>
+      </div>
       <section class="video">
         <figure>
           <iframe
@@ -86,7 +94,7 @@
         </p>
       </section>
       <img
-        srcset="gail2.jpg 480w, gail.jpg 800w"
+        srcset="gail1.jpg 480w, gail2.jpg 800w"
         sizes="(min-width: 1980px) 600px, calc(30.36vw + 5px)"
         src="./gail.jpg"
         alt="Gail comic domino"

@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="preload"
+      href="styles.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./styles.css" /></noscript>
+
     <link rel="icon" href="./favicon.ico" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <script async src="./trina_gallery.js"></script>
     <title>Marvel APP</title>
   </head>
   <body>
@@ -43,6 +49,5 @@
     <footer>
       <a href="http://marvel.com">Data provided by Marvel. © 2020 Marvel</a>
     </footer>
-    <script src="./trina_gallery.js"></script>
   </body>
 </html>
