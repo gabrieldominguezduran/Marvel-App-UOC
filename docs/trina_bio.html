@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" type="favicon.ico" href="./favicon.ico" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
     <title>Marvel APP</title>
   </head>
   <body>
@@ -15,9 +17,9 @@
             >C
             <div class="img-div">
               <img
+                srcset="/logo1.jpg 480w, /logo2.jpg 800w"
+                sizes="(min-width: 1200px) 61px, (min-width: 960px) 41px, 53px"
                 class="logo-img"
-                srcset="logo2.jpg 2x, logo.jpg 3x"
-                sizes="(min-width: 1980px) 129px, (min-width: 1200px) calc(0.92vw + 111px), (min-width: 960px) calc(9.09vw - 9px), (min-width: 660px) calc(14.64vw - 20px), (min-width: 480px) calc(20vw - 20px), calc(20vw - 5px)"
                 src="./logo.jpg"
                 alt="Logo"
               />
@@ -44,7 +46,6 @@
         <figure>
           <iframe
             src="https://www.youtube.com/embed/8W9YhglSqM8"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
