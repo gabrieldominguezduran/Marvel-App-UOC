@@ -337,6 +337,7 @@ figcaption {
 
 iframe {
   width: 80vw;
+  border: none;
 }
 
 footer {

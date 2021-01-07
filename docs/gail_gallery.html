@@ -3,15 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="preload"
-      href="styles.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript><link rel="stylesheet" href="./styles.css" /></noscript>
-    <script async src="./gail_gallery.js"></script>
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="./styles.css" />
+
     <link rel="icon" href="./favicon.ico" />
+    <link rel="preload" href="./gail_gallery.js" as="script" />
 
     <title>Marvel APP</title>
   </head>
@@ -50,5 +46,6 @@
     <footer>
       <a href="http://marvel.com">Data provided by Marvel. © 2020 Marvel</a>
     </footer>
+    <script src="./gail_gallery.js" defer></script>
   </body>
 </html>
